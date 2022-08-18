@@ -48,11 +48,10 @@ const filterTask = ()=>{
 const fillList = ()=>{
     toDoWrapper.innerHTML = "";
     if(tasks.length){
-        filterTask();
         tasks.forEach((item,index)=>{
             toDoWrapper.innerHTML += createTemplate(item,index);
         });
-        todItemElems = document.querySelectorAll(".todo-item")
+        todItemElems = document.querySelectorAll(".todo-item");
     }
 };
 
